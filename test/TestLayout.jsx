@@ -1,7 +1,8 @@
 'use strict';
-var React = require('react/addons');
-typeof window !== "undefined" && (window.React = React); // for devtools
-typeof window !== "undefined" && (window.Perf = React.addons.Perf); // for devtools
+var React = require('react');
+var ReactPerf = require('react-addons-perf');
+typeof window !== 'undefined' && (window.React = React); // for devtools
+typeof window !== 'undefined' && (window.Perf = ReactPerf); // for devtools
 var _ = require('lodash');
 var ResizableBox = require('../lib/ResizableBox.jsx');
 var Resizable = require('../lib/Resizable.jsx');
