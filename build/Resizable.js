@@ -49,7 +49,9 @@ var Resizable = module.exports = React.createClass({
         initialHeight: props.height,
         bounds: this.constraintsToBounds()
       });
-      this.refs.draggable.resetState();
+      if (this.refs.draggable) {
+        this.refs.draggable.resetState();
+      }
     }
   },
 

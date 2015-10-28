@@ -1,6 +1,6 @@
 {
   "name": "react-resizable",
-  "version": "0.4.3",
+  "version": "0.4.3-emosbaugh",
   "description": "A component that is resizable with handles.",
   "main": "index.js",
   "scripts": {
@@ -8,8 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "bash build.sh",
     "git-add-build": "git add build/",
-    "build-example": "webpack",
-    "dev": "echo 'Open http://localhost:4002/examples/1.html'; webpack-dev-server --config webpack-dev-server.config.js --hot --progress --colors --port 4002 --content-base .",
+    "build-example": "./node_modules/.bin/webpack",
+    "dev": "echo 'Open http://localhost:4002/examples/1.html'; ./node_modules/.bin/webpack-dev-server --config webpack-dev-server.config.js --hot --progress --colors --port 4002 --content-base .",
     "prepublish": "npm run build"
   },
   "repository": {
